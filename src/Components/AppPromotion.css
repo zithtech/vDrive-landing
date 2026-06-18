@@ -1,7 +1,7 @@
 .app-promotion {
-  background-color: #0B1B3B;
+  background-color: #0b1b3b;
   padding: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -38,7 +38,7 @@
   font-weight: 700;
   margin-bottom: 1.25rem;
   /* Reduced from 1.5rem */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .app-promotion-desc {
@@ -73,7 +73,7 @@
 .download-block h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -97,7 +97,9 @@
   width: auto;
   border-radius: 8px;
   /* Store standard border-radius */
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
   background-color: transparent !important;
   /* No inner background */
   box-shadow: none !important;
@@ -133,18 +135,11 @@
 
 .driver-badge {
   height: 100px;
-
-
-
 }
 
 .rider-badge {
   height: 100px;
-
-
 }
-
-
 
 /* Right Content Area - Illustration */
 .app-promotion-illustration {

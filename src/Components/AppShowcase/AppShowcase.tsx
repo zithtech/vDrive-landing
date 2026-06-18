@@ -1,4 +1,4 @@
-import './AppShowcase.css';
+import "./AppShowcase.css";
 
 export default function AppShowcase() {
   return (
@@ -7,7 +7,6 @@ export default function AppShowcase() {
       <div className="showcase-strip-banner">
         <div className="container">
           <div className="app-showcase-content">
-
             {/* Left Column - Text & Buttons */}
             <div className="app-showcase-text">
               <h2>
@@ -15,24 +14,31 @@ export default function AppShowcase() {
                 One Tap Away
               </h2>
               <p className="app-showcase-desc">
-                Download the vDrive app to book rides quickly,track drivers in real time,and enjoy safe and comfortable travel.
+                Download the vDrive app to book rides quickly,track drivers in real time,and enjoy
+                safe and comfortable travel.
               </p>
 
               {/* App Download Blocks */}
               <div className="app-download-grid">
-
                 {/* For Rider */}
                 <div className="download-block-composite">
                   <p className="download-label">For Rider</p>
-                  <img src="/images/Gemini_Generated_Image_gddsh8gddsh8gdds-removebg-preview.png" alt="Download for Rider" className="composite-badge-img rider-badge" />
+                  <img
+                    src="/images/Gemini_Generated_Image_gddsh8gddsh8gdds-removebg-preview.png"
+                    alt="Download for Rider"
+                    className="composite-badge-img rider-badge"
+                  />
                 </div>
 
                 {/* For Driver */}
                 <div className="download-block-composite">
                   <p className="download-label">For Driver</p>
-                  <img src="/images/Gemini_Generated_Image_gddsh8gddsh8gdds-removebg-preview.png" alt="Download for Driver" className="composite-badge-img driver-badge" />
+                  <img
+                    src="/images/Gemini_Generated_Image_gddsh8gddsh8gdds-removebg-preview.png"
+                    alt="Download for Driver"
+                    className="composite-badge-img driver-badge"
+                  />
                 </div>
-
               </div>
             </div>
 
@@ -51,7 +57,6 @@ export default function AppShowcase() {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </div>

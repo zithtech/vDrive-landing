@@ -50,7 +50,7 @@
   line-height: 1.3;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .app-showcase-desc {
@@ -90,7 +90,6 @@
   padding-left: 40px;
   /* left alignment */
 }
-
 
 /* Right Content Area - Illustration */
 .app-showcase-illustration {
@@ -159,7 +158,6 @@
     font-size: 1.2rem;
   }
 
-
   .showcase-strip-banner {
     min-height: auto;
     padding: 5rem 0;
@@ -207,9 +205,6 @@
   }
 }
 
-
-
-
 @media (max-width: 640px) {
   .app-showcase-text h2 {
     font-size: 2.1rem;
@@ -218,6 +213,5 @@
   .app-download-grid {
     flex-direction: column;
     align-items: center;
-
   }
 }

@@ -2,7 +2,7 @@
 .ride-type {
   /* padding: 6rem 0; */
   padding: 2rem 0 3rem 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* Override dotted background */
   position: relative;
   z-index: 10;
@@ -96,9 +96,11 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   /* Lighter shadow to make border pop */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   /* Clean visible border added */
 }
 
@@ -134,7 +136,7 @@
 
 /* Card Bottom: Content Area */
 .ride-card-bottom {
-  background-color: #F0F7FF;
+  background-color: #f0f7ff;
   padding: 1rem 1.25rem;
   /* Reduced from 2rem */
   display: flex;
@@ -147,7 +149,7 @@
   font-size: 1.25rem;
   margin-bottom: 0.35rem;
   /* Tightened */
-  color: #0F172A;
+  color: #0f172a;
   font-weight: 700;
   text-align: left;
 }
@@ -180,7 +182,7 @@
   justify-content: flex-start;
   gap: 0.6rem;
   font-size: 0.95rem;
-  color: #1E293B;
+  color: #1e293b;
   font-weight: 500;
 }
 
@@ -188,7 +190,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #0F172A;
+  background-color: #0f172a;
   display: inline-block;
   flex-shrink: 0;
 }
@@ -201,13 +203,13 @@
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: var(--radius-pill);
-  background-color: #2563EB;
+  background-color: #2563eb;
   color: white;
   transition: all 0.3s ease;
 }
 
 .btn-ride:hover {
-  background-color: #1D4ED8;
+  background-color: #1d4ed8;
   transform: translateX(5px);
 }
 
