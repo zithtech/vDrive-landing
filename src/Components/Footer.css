@@ -1,7 +1,7 @@
 .footer {
   background-color: #ffffff;
 
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   position: relative;
   width: 100%;
 }
@@ -15,7 +15,6 @@
 
   display: flex;
   align-items: flex-end;
-
 }
 
 .footers {
@@ -30,7 +29,6 @@
 
   object-position: bottom;
 }
-
 
 .footer-divider-tops {
   height: 1px;
@@ -209,11 +207,14 @@
   height: 0.5px;
   background-image:
     linear-gradient(to right, #4b5563 10px, transparent 10px),
-    /* Light black (Slate 600) */
-    radial-gradient(circle, #4b5563 2px, transparent 2px);
+    /* Light black (Slate 600) */ radial-gradient(circle, #4b5563 2px, transparent 2px);
   /* Light black dot */
-  background-size: 24px 2px, 24px 12px;
-  background-position: 0 0, 16px 0;
+  background-size:
+    24px 2px,
+    24px 12px;
+  background-position:
+    0 0,
+    16px 0;
   background-repeat: repeat-x;
   position: absolute;
   bottom: 110px;
@@ -231,7 +232,6 @@
   font-size: 0.9rem;
   position: relative;
   z-index: 2;
-
 }
 
 /* Floating Taxi Car */

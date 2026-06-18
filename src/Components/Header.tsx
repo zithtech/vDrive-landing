@@ -1,13 +1,6 @@
-import './Header.css';
+import "./Header.css";
 
-const NavigationLinks = [
-  'Home',
-  'About Us',
-  'Ride Type',
-  'Pricing',
-  'Process',
-  'Trust & Safety'
-];
+const NavigationLinks = ["Home", "About Us", "Ride Type", "Pricing", "Process", "Trust & Safety"];
 
 export default function Header() {
   return (
@@ -16,11 +9,7 @@ export default function Header() {
         {/* Logo */}
         <div className="logo-container">
           <a href="#" className="logo">
-            <img
-              src="/images/vdrive_logo_header.png"
-              alt="VDrive Logo"
-              className="logo-img"
-            />
+            <img src="/images/vdrive_logo_header.png" alt="VDrive Logo" className="logo-img" />
           </a>
         </div>
 
@@ -29,7 +18,7 @@ export default function Header() {
           <ul className="nav-list flex gap-8">
             {NavigationLinks.map((link) => (
               <li key={link}>
-                <a href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="nav-link">
+                <a href={`#${link.toLowerCase().replace(/ /g, "-")}`} className="nav-link">
                   {link}
                 </a>
               </li>

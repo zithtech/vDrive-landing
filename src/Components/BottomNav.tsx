@@ -1,29 +1,40 @@
-import { useState, useEffect } from 'react';
-import './BottomNav.css';
-import { Home, Info, Car, IndianRupee, Workflow, ShieldCheck, UserPlus, HelpCircle, Smartphone, MapPin } from 'lucide-react';
+import { useState, useEffect } from "react";
+import "./BottomNav.css";
+import {
+  Home,
+  Info,
+  Car,
+  IndianRupee,
+  Workflow,
+  ShieldCheck,
+  UserPlus,
+  HelpCircle,
+  Smartphone,
+  MapPin,
+} from "lucide-react";
 
 const navItems = [
-  { icon: Home, label: 'Home', href: '#home' },
-  { icon: Info, label: 'About', href: '#about-us' },
-  { icon: Car, label: 'Rides', href: '#ride-type' },
-  { icon: Workflow, label: 'Process', href: '#process' },
-  { icon: IndianRupee, label: 'Pricing', href: '#pricing' },
-  { icon: ShieldCheck, label: 'Safety', href: '#trust-&-safety' },
-  { icon: UserPlus, label: 'Driver', href: '#become-driver' },
+  { icon: Home, label: "Home", href: "#home" },
+  { icon: Info, label: "About", href: "#about-us" },
+  { icon: Car, label: "Rides", href: "#ride-type" },
+  { icon: Workflow, label: "Process", href: "#process" },
+  { icon: IndianRupee, label: "Pricing", href: "#pricing" },
+  { icon: ShieldCheck, label: "Safety", href: "#trust-&-safety" },
+  { icon: UserPlus, label: "Driver", href: "#become-driver" },
 
-  { icon: Smartphone, label: 'App', href: '#app-showcase' },
-  { icon: HelpCircle, label: 'FAQ', href: '#faq' },
-  { icon: MapPin, label: 'Footer', href: '#footer' },
+  { icon: Smartphone, label: "App", href: "#app-showcase" },
+  { icon: HelpCircle, label: "FAQ", href: "#faq" },
+  { icon: MapPin, label: "Footer", href: "#footer" },
 ];
 
 export default function BottomNav() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const observerOptions = {
       root: null,
       // rootMargin: '-45% 0px -45% 0px', // Narrow slit in the middle
-      rootMargin: '-30% 0px -30% 0px',
+      rootMargin: "-30% 0px -30% 0px",
       threshold: 0,
     };
 
@@ -39,7 +50,7 @@ export default function BottomNav() {
 
     // Observe all sections that correspond to nav items
     navItems.forEach((item) => {
-      const sectionId = item.href.replace('#', '');
+      const sectionId = item.href.replace("#", "");
       const element = document.getElementById(sectionId);
       if (element) {
         observer.observe(element);
@@ -51,9 +62,9 @@ export default function BottomNav() {
 
   // Auto-scroll active item into view
   useEffect(() => {
-    const activeElement = document.querySelector('.bottom-nav-item.active');
+    const activeElement = document.querySelector(".bottom-nav-item.active");
     if (activeElement) {
-      activeElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      activeElement.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
     }
   }, [activeSection]);
 
@@ -61,14 +72,14 @@ export default function BottomNav() {
     <nav className="bottom-nav">
       <div className="bottom-nav-container">
         {navItems.map((item) => {
-          const sectionId = item.href.replace('#', '');
+          const sectionId = item.href.replace("#", "");
           const isActive = activeSection === sectionId;
 
           return (
             <a
               key={item.label}
               href={item.href}
-              className={`bottom-nav-item ${isActive ? 'active' : ''}`}
+              className={`bottom-nav-item ${isActive ? "active" : ""}`}
             >
               <item.icon size={22} className="bottom-nav-icon" />
               <span className="bottom-nav-label">{item.label}</span>

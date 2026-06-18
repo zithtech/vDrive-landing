@@ -48,8 +48,6 @@
   z-index: -1;
 }
 
-
-
 .faq-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

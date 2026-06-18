@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import './BecomeDriver.css';
+import { useState } from "react";
+import "./BecomeDriver.css";
 
 const steps = [
   {
     id: 1,
-    title: 'Register Online',
-    description: 'Create your account by entering your basic details and vehicle information.',
+    title: "Register Online",
+    description: "Create your account by entering your basic details and vehicle information.",
   },
   {
     id: 2,
-    title: 'Upload Documents',
-    description: 'Submit your driving license, vehicle registration, and ID for verification.',
+    title: "Upload Documents",
+    description: "Submit your driving license, vehicle registration, and ID for verification.",
   },
   {
     id: 3,
-    title: 'Physical Verification',
-    description: 'Get approved, go online, and start accepting ride requests to earn.',
-  }
+    title: "Physical Verification",
+    description: "Get approved, go online, and start accepting ride requests to earn.",
+  },
 ];
 
 export default function BecomeDriver() {
@@ -53,22 +53,55 @@ export default function BecomeDriver() {
           <div className="dynamic-content fade-in">
             <div className="upload-grid">
               <div className="upload-card">
-                <svg className="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                <svg
+                  className="upload-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                  ></path>
                 </svg>
                 <h4>Aadhaar Card</h4>
                 <p>Upload your Document</p>
               </div>
               <div className="upload-card">
-                <svg className="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                <svg
+                  className="upload-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                  ></path>
                 </svg>
                 <h4>Driving License</h4>
                 <p>Upload your Document</p>
               </div>
               <div className="upload-card">
-                <svg className="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                <svg
+                  className="upload-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                  ></path>
                 </svg>
                 <h4>PAN Card</h4>
                 <p>Upload your Document</p>
@@ -107,7 +140,8 @@ export default function BecomeDriver() {
     <section className="become-driver-section" id="become-driver">
       <div className="become-driver-container">
         <h2 className="become-driver-title">
-          3 Steps to Become a Driver<br /> with <span>VDrive</span>
+          3 Steps to Become a Driver
+          <br /> with <span>VDrive</span>
         </h2>
 
         <div className="become-driver-content">
@@ -115,7 +149,7 @@ export default function BecomeDriver() {
             {steps.map((step) => (
               <div
                 key={step.id}
-                className={`step-item ${activeStep === step.id ? 'active' : ''}`}
+                className={`step-item ${activeStep === step.id ? "active" : ""}`}
                 onClick={() => setActiveStep(step.id)}
               >
                 <div className="step-number">{step.id}</div>
