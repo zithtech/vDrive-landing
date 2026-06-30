@@ -61,8 +61,8 @@ export default function Header() {
       <header className="header">
         <div className="container flex-between header-container">
           {/* Mobile Hamburger Menu Toggle */}
-          <button 
-            className="mobile-hamburger" 
+          <button
+            className="mobile-hamburger"
             onClick={() => setIsMobileMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -121,9 +121,9 @@ export default function Header() {
               const sectionId = item.href.replace('#', '');
               const isActive = activeSection === sectionId;
               return (
-                <a 
-                  key={item.label} 
-                  href={item.href} 
+                <a
+                  key={item.label}
+                  href={item.href}
                   className={`mobile-sidebar-item ${isActive ? 'active' : ''}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

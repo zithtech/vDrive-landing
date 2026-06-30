@@ -2,7 +2,6 @@
   padding: 2.5rem 0;
 
   overflow: hidden;
-  ;
 }
 
 .hero .container {
@@ -20,14 +19,10 @@
   align-items: center;
 }
 
-
 /* Left Content */
 .hero-content {
   max-width: 650px;
 }
-
-
-
 
 .hero-title {
   font-size: 4rem;
@@ -46,10 +41,6 @@
   background-clip: initial;
   -webkit-text-fill-color: initial;
 }
-
-
-
-
 
 /* Removed sr-only and hidden title styles as title is now visible */
 
@@ -219,12 +210,10 @@
 }
 
 .driver-dot {
-  background-color: #10B981;
+  background-color: #10b981;
 }
 
-
 @keyframes float-slow {
-
   0%,
   100% {
     transform: translateY(0);
@@ -236,7 +225,6 @@
 }
 
 @keyframes float-medium {
-
   0%,
   100% {
     transform: translateY(0);
@@ -248,7 +236,6 @@
 }
 
 @keyframes float-fast {
-
   0%,
   100% {
     transform: translateY(0);
@@ -298,8 +285,6 @@
     margin: 0 auto;
   }
 }
-
-
 
 @media (max-width: 640px) {
   .hero {

@@ -14,7 +14,7 @@
 
 .about-container {
   position: relative;
-  background-color: #0B1B3B;
+  background-color: #0b1b3b;
   /* Navy dark background */
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -113,7 +113,7 @@
 }
 
 .about-title {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 1.25rem;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   /* Reduced font size to make more compact */
@@ -121,7 +121,7 @@
 }
 
 .about-description {
-  color: #94A3B8;
+  color: #94a3b8;
   /* Light grey text */
   font-size: 1rem;
   /* Reduced font size from 1.125rem */

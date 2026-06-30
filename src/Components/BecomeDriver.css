@@ -325,6 +325,7 @@
     padding: 40px 5%;
   }
 }
+
 /* Viewport specific displays for accordion vs side-by-side */
 .mobile-content-panel {
   display: none;
@@ -350,7 +351,7 @@
   .desktop-content-panel {
     display: none;
   }
-  
+
   .mobile-content-panel {
     display: flex;
     margin-top: 10px;

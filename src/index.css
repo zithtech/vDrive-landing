@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
   /* Colors */
-  --primary: #2563EB;
-  --primary-hover: #1D4ED8;
-  --primary-light: #E0E7FF;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #e0e7ff;
 
-  --text-main: #0F172A;
-  --text-muted: #64748B;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
 
-  --bg-main: #FAFAF9;
-  --bg-card: #FFFFFF;
-  --bg-dotted: radial-gradient(#CBD5E1 1px, transparent 1px);
+  --bg-main: #fafaf9;
+  --bg-card: #ffffff;
+  --bg-dotted: radial-gradient(#cbd5e1 1px, transparent 1px);
 
   /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 
   /* Shadows */
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -168,7 +168,7 @@ a {
 .btn-outline {
   background-color: transparent;
   color: var(--text-main);
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
 }
 
 .btn-outline:hover {
