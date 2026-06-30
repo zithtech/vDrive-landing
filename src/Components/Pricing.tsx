@@ -46,7 +46,7 @@ export default function Pricing() {
   return (
     <section className="pricing-section" id="pricing">
       <div className="container">
-        
+
         {/* Section Header */}
         <div className="pricing-header flex flex-col items-center flex-center text-center">
           <div className="badge badge-blue">
@@ -60,8 +60,8 @@ export default function Pricing() {
         {/* Pricing Cards Grid */}
         <div className="pricing-grid">
           {plans.map((plan) => (
-            <div 
-              key={plan.id} 
+            <div
+              key={plan.id}
               className={`pricing-card ${plan.isPopular ? 'popular-card' : ''}`}
             >
               {plan.isPopular && (
@@ -69,16 +69,16 @@ export default function Pricing() {
                   MOST POPULAR PLAN
                 </div>
               )}
-              
+
               <div className="pricing-card-content">
                 <h3 className="plan-name">{plan.name}</h3>
                 <p className="plan-desc">{plan.description}</p>
-                
-                <div className="plan-price-wrapper">
+
+                {/* <div className="plan-price-wrapper">
                   <span className="currency">₹</span>
                   <span className="plan-price">{plan.price}</span>
                   <span className="per-ride">/ ride</span>
-                </div>
+                </div> */}
 
                 <ul className="plan-features">
                   {plan.features.map((feature, index) => (
