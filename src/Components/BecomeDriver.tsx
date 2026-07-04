@@ -147,22 +147,36 @@ export default function BecomeDriver() {
         <div className="become-driver-content">
           <div className="step-navigation">
             {steps.map((step) => (
-              <div
-                key={step.id}
-                className={`step-item ${activeStep === step.id ? "active" : ""}`}
-                onClick={() => setActiveStep(step.id)}
-              >
-                <div className="step-number">{step.id}</div>
-                <div className="step-info">
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
+              <div key={step.id} className="step-wrapper">
+                <div
+                  className={`step-item ${activeStep === step.id ? 'active' : ''}`}
+                  onClick={() => setActiveStep(step.id)}
+                >
+                  <div className="step-number">{step.id}</div>
+                  <div className="step-info">
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </div>
                 </div>
+
+                {/* Mobile Content Panel (Accordion style) */}
+                {activeStep === step.id && (
+                  <div className="content-panel mobile-content-panel">
+                    <div className="panel-header">
+                      <h2>{step.title}</h2>
+                    </div>
+                    {renderContent()}
+                  </div>
+                )}
               </div>
             ))}
-            <button className="contact-button">Contact us</button>
+            <div className="contact-btn-container">
+              <button className="contact-button">Contact us</button>
+            </div>
           </div>
 
-          <div className="content-panel">
+          {/* Desktop Content Panel */}
+          <div className="content-panel desktop-content-panel">
             <div className="panel-header">
               <h2>{steps[activeStep - 1].title}</h2>
             </div>
